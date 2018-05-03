@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../static/css/type.css">
+    <link rel="stylesheet" href="../static/icon/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <em class="header-checkin"></em>
+            <div class="tab">
+                <a href="javascript:;" class="lok">书城</a>
+                <a href="javascript:;">书架</a>
+            </div>
+            <em class="header-user"></em>
+        </header>
+        <div class="maxTab">
+            <section class="section show" down="下拉加载更多...">
+                <div class="full">
+                    <div class="pull">
+                        <div class="ipt">
+                            <a href="../static/js/page/chapter.html">
+                                <i class="iconfont">&#xe729;</i>
+                                <input type="text" placeholder="输入书名/作者/关键字">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="banner swiper-container">
+                    <script type="text/x-handlebars-template" id="ip1">
+                        <div class="swiper-wrapper">
+                            {{#each data}} {{#if ad_pic_url}}
+                            <div class="swiper-silde"><img src="{{ad_pic_url}}" alt=""></div>
+                            {{/if}} {{/each}}
+                        </div>
+                    </script>
+                </div>
+                <ul class="top-home__btn">
+                    <li data-href="#page=channel&amp;id=664" data-title="限免">
+                        <a href="../static/js/page/xianmian.html">
+                            <img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p015iBxwdkmU/5wc5uzYhLZ7iVa.png">
+                            <p class="top-home__des">限免</p>
+                        </a>
+                    </li>
+                    <li data-href="#page=channel&amp;id=370" data-title="女生"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p01LWZmXGCpy/aSrSq6Llgt9PqE.png">
+                        <p class="top-home__des">女生</p>
+                    </li>
+                    <li data-href="#page=channel&amp;id=369" data-title="男生"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png">
+                        <p class="top-home__des">男生</p>
+                    </li>
+                    <li data-href="/hs/market/cate" data-title="分类">
+                        <a href="../static/js/page/fenlei.html">
+                            <img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p01pz5NtyRI0/2ENONnvOg23NXM.png">
+                            <p class="top-home__des">分类</p>
+                        </a>
+
+                    </li>
+                    <li data-href="/hs/market/rank" data-title="排行"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p010kK7M5VyH/8kPz9nKvRXyu1k.png">
+                        <p class="top-home__des">排行</p>
+                    </li>
+                </ul>
+                <section>
+                    <section class="channel-group main-card">
+                        <div class="channel-group__header">
+                            <h2 class="channel-group__title channel-group__title_left">本周最火</h2>
+                        </div>
+                        <script type="text/x-handlebars-template" id="ip2">
+                            <ul class="book-table">
+                                {{#each data}}
+                                <a href="../static/js/page/book.html">
+                                    <li data-track="0">
+                                        <div class="u-book -vertical" data-href="#page=book&amp;source_id=352876&amp;source=2" da="index.1.b.0*2_352876" expose="">
+                                            <div class="book-cover Lazy_loading Lazy_loaded" data-id="352876" id="Tag__4"><img alt="" src="{{cover}}">
+                                                <div class="u-tagRT"></div>
+                                            </div>
+                                            <div class="info">
+                                                <h3 class="title">{{title}}</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a>
+                                {{/each}}
+                            </ul>
+                        </script>
+                    </section>
+                    <a class="channel-group__footer" data-href="#page=topic&amp;type=fiction&amp;id=11059">查看更多</a>
+                </section>
+                <section class="channel-h5 channel-h5_tab" id="Tag__10">
+                    <div class="channel-h5__header">
+                        <p class="channel-h5__title channel-group__title_left">重磅推荐<i>推</i></p>
+                        <div class="tab"><a href="javascript:" da="index.2.t.1.0" expose="" class="tab__on">男</a><a href="javascript:" da="index.2.t.2.0" expose="">女</a></div>
+                    </div>
+                    <div class="tab__bd">
+                        <div class="tab__wrap">
+                            <script type="text/x-handlebars-template" id="ip3">
+                                {{#each data}}
+                                <div class="Fade list-h5__wrap" data-dom-uid="6">
+                                    <div style="visibility: visible;">
+                                        <ul class="list-h5">
+                                            <li>
+                                                <div class="book-h5" data-href="#page=book&amp;source_id=271019&amp;source=2" da="index.2.b.0*2_271019" expose="">
+                                                    <div class="book-h5__cover Lazy_loading Lazy_loaded" data-id="271019" id="Tag__11"><img alt="我的绝美女神老婆" src="{{cover}}">
+                                                        <div class="u-tagRT"></div>
+                                                        <p class="book-h5__finish">完结</p>
+                                                        <div class="book-h5__order">1</div>
+                                                    </div>
+                                                    <div class="book-h5__info">
+                                                        <p class="book-h5__title">{{title}}</p>
+                                                        <p class="book-h5__author"><span class="author">{{authors}}</span></p>
+                                                        <p class="book-h5__summary">{{summary}}</p>
+                                                        <div class="book-h5__wrap">
+                                                            <div class="book-h5__tag">都市情缘</div>
+                                                            <div class="book-h5__tag">热血都市</div>
+                                                            <div class="book-h5__tag">506万字</div>
+                                                            <!--<p class="book-h5__latest">完结</p>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=270754&amp;source=2" da="index.2.b.1*2_270754" expose=""><span class="book-h5_no-img__order">02</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">异能狂徒在校园<i class="book-h5_no-img__author"><span class="author">三寸烟火</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=42019&amp;source=2" da="index.2.b.2*2_42019" expose=""><span class="book-h5_no-img__order">03</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">鬼吹灯（盗墓者的经历）<i class="book-h5_no-img__author"><span class="author">本物天下霸唱</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=30064&amp;source=2" da="index.2.b.3*2_30064" expose=""><span class="book-h5_no-img__order">04</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">兵王之王<i class="book-h5_no-img__author"><span class="author">七品</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=282109&amp;source=2" da="index.2.b.4*2_282109" expose=""><span class="book-h5_no-img__order">05</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">都市武圣<i class="book-h5_no-img__author"><span class="author">河帅</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="list-h5">
+                                            <li>
+                                                <div class="book-h5" data-href="#page=book&amp;source_id=33887&amp;source=2" da="index.2.b.10*2_33887" expose="">
+                                                    <div class="book-h5__cover Lazy_loading" data-id="33887" id="Tag__13"><img alt="虚无神在都市">
+                                                        <div class="u-tagRT"></div>
+                                                        <p class="book-h5__finish">完结</p>
+                                                        <div class="book-h5__order">1</div>
+                                                    </div>
+                                                    <div class="book-h5__info">
+                                                        <p class="book-h5__title">虚无神在都市</p>
+                                                        <p class="book-h5__author"><span class="author">血色红泪</span></p>
+                                                        <p class="book-h5__summary">神仙投胎到地球的一户普通人家，任性的他选择用普通人的模式征服世界！</p>
+                                                        <div class="book-h5__wrap">
+                                                            <div class="book-h5__tag">热血</div>
+                                                            <div class="book-h5__tag">热血都市</div>
+                                                            <div class="book-h5__tag">568万字</div>
+                                                            <!--<p class="book-h5__latest">完结</p>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=302086&amp;source=2" da="index.2.b.11*2_302086" expose=""><span class="book-h5_no-img__order">02</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">超级姐夫<i class="book-h5_no-img__author"><span class="author">酒天</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=49258&amp;source=2" da="index.2.b.12*2_49258" expose=""><span class="book-h5_no-img__order">03</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">九阳绝脉<i class="book-h5_no-img__author"><span class="author">酸豆角</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=49226&amp;source=2" da="index.2.b.13*2_49226" expose=""><span class="book-h5_no-img__order">04</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">都市极品人生<i class="book-h5_no-img__author"><span class="author">逍遥门主</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="book-h5 book-h5_no-img" data-href="#page=book&amp;source_id=271034&amp;source=2" da="index.2.b.14*2_271034" expose=""><span class="book-h5_no-img__order">05</span>
+                                                    <div class="book-h5_no-img__info">
+                                                        <p class="book-h5_no-img__title">他身上有条龙<i class="book-h5_no-img__author"><span class="author">黑夜与孤城</span></i></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="channel-h5__footer_next" id="Tag__14"><a class="btn-h5__next" href="javascript:" da="index.2.n.0" expose="">换一换</a><a class="btn-h5__more" data-href="#page=channel&amp;id=369" da="index.2.m.0" expose="">查看全部</a></div>
+                                {{/each}}
+                            </script>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="section">
+                <div class="new-page shelf">
+                    <div class="shelf__top">
+                        <div class="shelf__switch" id="Tag__132"></div>
+                        <div class="shelf-search" data-href="#page=search">输入书名/作者/关键字</div>
+                    </div>
+                    <ul class="book-list">
+                        <li id="Tag__133">
+                            <div class="u-book" data-href="#page=reader&amp;id=352876" da="index.shelf.b.0*2_352876" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="352876" id="Tag__134"><img alt="驭房有术" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01I66oHszK2/7CDwQEqR7CFkXT.jpg!s">
+                                        <div class="u-tagRT"></div><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span>
+                                        <span
+                                            class="u-booktag shelf__tag">有更新</span>
+                                    </div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">驭房有术</h3>
+                                    <p class="author single-line"><span class="author">铁锁</span></p>
+                                    <p class="extra single-line">已读: 第1章 进城</p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 第2269章 梦魇</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__135">
+                            <div class="u-book" data-href="#page=reader&amp;id=405816" da="index.shelf.b.1*2_405816" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="405816" id="Tag__136"><img alt="亲兵是女娃" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p013RTDaJwWw/X7UMMImCuCSjl2.jpg!s">
+                                        <div class="u-tagRT"></div><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span>
+                                        <span
+                                            class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span></div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">亲兵是女娃</h3>
+                                    <p class="author single-line"><span class="author">俞七少</span></p>
+                                    <p class="extra single-line">已读: 01：替父从军</p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 1175：诱拐</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__137">
+                            <div class="u-book" data-href="#page=reader&amp;id=315103" da="index.shelf.b.2*2_315103" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="315103" id="Tag__138"><img alt="与千年女鬼同居的日子" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p016UvfGFQEL/S0L9slf1RtEio9.jpg!s">
+                                        <div class="u-tagRT"></div>
+                                    </div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">与千年女鬼同居的日子</h3>
+                                    <p class="author single-line"><span class="author">卜非</span></p>
+                                    <p class="extra single-line">已读: 第七十一章 怎么会有关系</p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 新书《都市修真妖孽》</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__139">
+                            <div class="u-book" data-href="#page=reader&amp;id=322020" da="index.shelf.b.3*2_322020" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="322020" id="Tag__140"><img alt="极品逍遥大少爷" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01v1J47Y7NU/auHZsZIAShT2or.jpg!s">
+                                        <div class="u-tagRT"></div><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span>
+                                        <span
+                                            class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span></div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">极品逍遥大少爷</h3>
+                                    <p class="author single-line"><span class="author">俺是老王</span></p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 第2820章 裂纹</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__141">
+                            <div class="u-book" data-href="#page=reader&amp;id=352138" da="index.shelf.b.4*2_352138" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="352138" id="Tag__142"><img alt="圣墟" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p018HIWSyPG4/KlrzVBCWhadNJW.jpg!s">
+                                        <div class="u-tagRT"></div><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span>
+                                        <span
+                                            class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span></div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">圣墟</h3>
+                                    <p class="author single-line"><span class="author">辰东</span></p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 阳间篇 第1026章 胎中迷真相</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__143">
+                            <div class="u-book" data-href="#page=reader&amp;id=270874" da="index.shelf.b.5*2_270874" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="270874" id="Tag__144"><img alt="最强兵王" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p0179ZEepDhr/OgulWFxaoxVtlE.jpg!s">
+                                        <div class="u-tagRT"></div>
+                                    </div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">最强兵王</h3>
+                                    <p class="author single-line"><span class="author">丛林狼</span></p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 第4040章：新的征程（大结局）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__145">
+                            <div class="u-book" data-href="#page=reader&amp;id=318621" da="index.shelf.b.6*2_318621" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="318621" id="Tag__146"><img alt="晚安，总裁大人！" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p016oNxwi10V/QxFyN7htrkMU0L.jpg!s">
+                                        <div class="u-tagRT"></div>
+                                    </div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">晚安，总裁大人！</h3>
+                                    <p class="author single-line"><span class="author">容嬷嬷</span></p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 1972结局卷（十六）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="Tag__147">
+                            <div class="u-book" data-href="#page=reader&amp;id=323125" da="index.shelf.b.7*2_323125" expose="">
+                                <a>
+                                    <div class="book-cover Lazy_loading Lazy_loaded" data-id="323125" id="Tag__148"><img alt="亿万盛宠只为你" src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01VhLmhAvib/B4tht7RpMz7Z9b.jpg!s">
+                                        <div class="u-tagRT"></div><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span><span class="u-booktag shelf__tag">有更新</span></div>
+                                </a>
+                                <div class="info">
+                                    <h3 class="title single-line">亿万盛宠只为你</h3>
+                                    <p class="author single-line"><span class="author">默小水</span></p>
+                                    <div class="wrap">
+                                        <p class="extra single-line">最新: 第3216章 不许她跟别的男人靠太近（4）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+<script src="../static/js/lib/require.js" data-main="../static/js/main"></script>
+<!-- <script src="../static/js/lib/swiper-3.4.2.min.js"></script> -->
+<script>
+    // $('.tab a').click(function(){
+    //     console.log($(this).addClass('lok').siblings())
+    // })
+</script>
+
+</html>

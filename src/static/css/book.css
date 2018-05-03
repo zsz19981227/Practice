@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: .14rem;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html {
+  font-size: 625%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 0.44rem;
+  background-color: #efeff0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  line-height: .44rem;
+}
+.header i:first-child {
+  margin-left: .1rem;
+}
+.header i:last-child {
+  position: absolute;
+  right: .1rem;
+}
+.u-book {
+  display: flex;
+}
+.u-book .Lazy_loading {
+  width: 40%;
+  padding: .2rem .2rem 0 .2rem;
+}
+.u-book .Lazy_loading img {
+  width: 70%;
+}
+.u-book .title {
+  margin-bottom: 13px;
+  font-size: .2rem;
+  overflow: hidden;
+  margin-top: .3rem;
+}
+.u-book .author {
+  color: #4b99a7;
+  line-height: 1.4;
+}
+.u-book .u-grade {
+  margin: 3px 0 6px 0;
+}
+.u-book .read {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #8d8d8d;
+}
+.u-book .grade {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+}
+.u-book .price {
+  color: #727272;
+}
+.u-book .count {
+  color: #6e6e6e;
+  font-size: .12rem;
+}
+.u-book .u-booktag.-serial {
+  color: #63bd6e;
+  border-color: #63bd6e;
+}
